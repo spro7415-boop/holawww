@@ -1,0 +1,221 @@
+*/
+
+/*-----------------
+     selector global
+------------------*/
+* {
+  box-sizing: border-box;
+
+}
+
+body{
+    margin: 0;
+    padding: 32px 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #304724;
+    background: #f3f6f6;
+}
+
+/*aplicamos estilos al contenedor main*/
+
+main{
+    max-width: 1400px;
+    margin: 0 auto;
+
+}
+
+/*estilos para le header*/
+
+head{
+    margin-bottom: 24px;
+
+}
+/*estilos h1*/
+
+h1 {
+    margin: 0 0 8px;
+    font-size: clamp(24px, 4vm, 34px);
+    color: black;
+}
+
+header p {
+margin: 0%;
+color: #304724;
+line-height: 1.5;
+
+}
+
+/*permite cnsultar todas las columnas en pantallas pequeñas*/
+
+.tabla-contenedor {
+    overflow-x: auto;
+    background-color: #f3f6f6;
+    border: 1px solid #dce4ee ;
+    border-radius: 14px;
+    box-shadow: 0 8px 24px rgb( 15 23 42 / 6%);
+}
+
+/*invocamos un pseudoclase*/
+.tabla-contenedor:focus-visible {
+    outline: 3px #2563eb;
+    outline-offset: 4px ;
+}
+
+/*creamos estilos a la etiqueta table*/
+table{
+
+    width: 100%;
+    min-width: 1100px;
+    border-collapse: collapse;
+    font-size: 14px;
+}
+
+caption{
+    padding: 18px 20px;
+    text-align: left;
+    font-weight: 700;
+    color: black;
+    background-color: #dce4ee;
+}
+
+/*estilos a la cabecera de la tabla*/
+thead th {
+    padding: 16px 12px;
+    color: #f3f6f6;
+    background-color: rgb(1, 15, 111);
+    border: 1px solid #0609a9;
+    text-align: center;
+    line-height: 1.4;
+
+}
+
+thead tr:nth-child(2) th {
+    background-color: #3600d9;
+}
+
+tbody td,
+tbody th {
+    padding: 16px 12px;
+    border-bottom: 1px solid #d2dada;
+    text-align: left;
+    vertical-align: middle;
+    line-height: 1.5;
+
+}
+
+tbody tr:nth-child(even){ 
+    background: #f3f6f6;
+}
+
+tbody tr:hover {
+    background: #dce4ee;
+}
+
+tbody tr:last-child td,
+tbody tr:last -child th {
+    border-bottom: none;
+}
+
+.categoria {
+    width: 160px;
+    background: #f3f6f6;
+    color: black;
+    font-weight: 700;
+
+}
+
+.categoria small {
+    display: block;
+    margin-top: 6px;
+    color: #372447;
+    font-weight: 400;
+
+}
+
+.producto {
+    font-weight: 700;
+}
+
+.descripcion {
+    min-width: 190px;
+    max-width: 260px;
+    color: #304724;
+
+}
+
+.numero {
+    text-align: center;
+    font-variant-numeric: tabular-nums;
+
+}
+
+.dinero {
+    text-align: right;
+    white-space: nowrap;
+    font-variant-numeric: tabular-nums;    
+}
+
+.total-ventas {
+    color: #304724;
+    font-weight: 700;
+
+}
+
+.imagen-producto{
+    display: block;
+    width: 64px;
+    height: 64px;
+    margin: 0 auto;
+    padding: 4px;
+    object-fit: contain;
+    background: #f3f6f6;
+    border: 1px solid #cdd1d6;
+    border-radius: 10px;
+
+}
+
+/*selector tipo clase*/
+
+.container{
+    color: blue;
+    text-align: right;   
+}
+
+.nota {
+    margin: 12xp 0 24px;
+    font-size: 13px;
+    color: #304724;
+
+}
+
+.enlace-home {
+    display: inline-block;
+    padding: 12px 18px;
+    color: #dce4ee;
+    background: #123176;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.enlace-home:hover {
+    background: #2563eb;
+
+}
+
+.enlace-home:focus-visible {
+    outline: 3px solid #304724;
+    outline-offset: 3px;
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 24px 12px;
+    }
+
+    thead th,
+    tbody td,
+    tbody th{
+        padding: 12px 10px;
+    }
+}
